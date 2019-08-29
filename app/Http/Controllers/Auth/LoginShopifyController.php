@@ -27,7 +27,7 @@ class LoginShopifyController extends Controller
             ['subdomain' => $request->get('domain')]
         );
 
-        return Socialite::with('Shopify')
+        return Socialite::with('shopify')
             ->setConfig($config)
             ->scopes(['read_products', 'write_products', 'write_orders', 'read_orders'])
             ->redirect();
