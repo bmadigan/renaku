@@ -5,5 +5,8 @@
 
 // Custom Styles
 // ----------------------------
+.card {
+    @apply max-w-sm rounded overflow-hidden shadow-lg bg-white;
+}
 
 @import "tailwindcss/utilities";
